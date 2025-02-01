@@ -5,8 +5,6 @@ services:
     restart: always
     networks:
       - 1panel-network
-    volumes:
-      - "${WORK_SPACE_PATH}:/rec"
     ports:
       - "${PANEL_APP_PORT_HTTP}:3000"
     labels:
